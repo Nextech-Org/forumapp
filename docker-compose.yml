@@ -1,0 +1,22 @@
+version: "3.8"
+
+services:
+  apigateway:
+    build: ./api-gateway
+    ports:
+      - "3000:3000"
+
+  users:
+    build: ./users
+    ports:
+      - "8000:8000"
+
+  threads:
+    build: ./threads
+    ports:
+      - "8001:8001"
+
+  replies:
+    build: ./replies
+    ports:
+      - "8002:8002"
